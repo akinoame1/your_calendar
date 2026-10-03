@@ -1,0 +1,38 @@
+# Settings — version 1.0.299
+
+- `widget.daysAhead` — integer 1..60 — How many days the widget lists. Default: 14
+- `widget.weekendDays` — list of: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY — Days drawn red as the weekend. Default: FRIDAY, SATURDAY
+- `widget.middayRuleHour` — integer or null 0..23 — Hour of the rule splitting a day's morning from afternoon; null for none. Default: 12
+- `widget.lingerMinutes` — integer 0..720 — How long a finished event stays listed today. Default: 60
+- `widget.comingUpMinutes` — integer 1..240 — How far ahead the 'coming up' notice looks. Default: 10
+- `widget.chipColours` — one of: VIVID, MUTED — VIVID: each calendar's own colour; MUTED: one lightness for all. Default: VIVID
+- `widget.battery` — one of: BAR, PILL, OFF — BAR across the top, PILL inside the date, or OFF. Default: BAR
+- `widget.batteryWarningAt` — integer 10..95 — Percent at and below which the battery is at warning (amber); above critical. Default: 30
+- `widget.batteryCriticalAt` — integer 5..90 — Percent at and below which the battery is critical (red); below warning. Default: 15
+- `widget.batteryFullChargeAt` — integer 10..100 — Percent from which the battery is at full charge (its fullCharge colour, state battery.fullCharge); above warning. Default: 80
+- `widget.batteryWarmAt` — integer 20..60 — Degrees from which the battery temperature is warm (battery.temperature.warm); below hot. Default: 35
+- `widget.batteryHotAt` — integer 20..70 — Degrees from which the battery temperature is hot (battery.temperature.hot); above warm. Default: 40
+- `widget.size.header` — integer 60..200 — Widget header text, percent. Default: 100
+- `widget.size.dayColumn` — integer 60..200 — Widget day column, percent. Default: 100
+- `widget.size.weekday` — integer 60..200 — Widget weekday name within the day column, percent. Default: 130
+- `widget.size.chips` — integer 60..200 — Widget event and task text, percent. Default: 115
+- `widget.size.chipSpace` — integer 0..200 — Widget space around chip text, percent. Default: 100
+- `app.size.dayColumn` — integer 60..200 — App schedule day column, percent. Default: 100
+- `app.size.weekday` — integer 60..200 — App schedule weekday name, percent. Default: 100
+- `app.size.chips` — integer 60..200 — App schedule event and task text, percent. Default: 100
+- `app.size.chipSpace` — integer 0..200 — App schedule space around chip text, percent. Default: 100
+- `app.versionLine` — "ALL", {"allExcept": list of}, or list of: SCHEDULE, EVENT, EDIT, SEARCH, SETTINGS, CHAT, HIDDEN, REPORT — Screens that show the version and report line (a tap on it opens the debug report). "ALL" is every screen, including screens added in later versions; {"allExcept": [...]} is every screen but those; a list is exactly those screens and no others, [] none (the widget's version still opens the report). For "everywhere" use "ALL" or allExcept, never a list of today's screens. Default: SCHEDULE
+- `app.versionLine.parts` — ordered list of: VERSION, BUILT, REPORT — What the version line says, in this order: VERSION (1.0.N), BUILT (the build time), REPORT (the word report). Default: VERSION, BUILT, REPORT
+- `app.versionLine.position` — one of: TOP, BOTTOM — The version line above (TOP) or under (BOTTOM) the screen. Default: BOTTOM
+- `app.versionLine.align` — one of: START, CENTER, END — The version line's text from the START, CENTER or END. Default: START
+- `behaviour.cancelled.words` — list of texts — Words that mark an event or task as cancelled when its title starts with one (any case); Cancel writes the first. Cancelled items never notify, ring or carry over. Default: CANCELED, CANCELLED
+- `behaviour.cancelled.show` — one of: AS_IS, STRUCK, HIDDEN — How a cancelled item is drawn: AS_IS (like any other; style it with the chip.cancelled state), STRUCK (struck through), HIDDEN (not drawn). Default: AS_IS
+- `app.monthGridOpen` — boolean — Month grid shown above the app's schedule. Default: true
+- `picker.size` — integer 60..200 — Month picker days, percent; shrinks further on its own to fit. Default: 100
+- `newEvent.minutes` — integer 5..480 — Length of a new timed event. Default: 30
+- `newEvent.visibility` — one of: DEFAULT, CONFIDENTIAL, PRIVATE, PUBLIC — Visibility a new event gets. Default: DEFAULT
+- `newEvent.calendar` — one of, or null (this phone's calendar names, sent in the message) — Calendar a new event goes to; null for the phone's first writable one. Default: none
+- `newEvent.rememberLastCalendar` — boolean — A new event goes to the calendar the last one went to. Default: false
+- `tasks.calendar` — one of, or null (this phone's calendar names, sent in the message) — The calendar whose events are tasks. Default: none
+- `calendars.hidden` — list of (this phone's calendar names, sent in the message) — Calendars kept off the widget and the schedule. Default: none
+- `holidays.roles` — object: calendar -> role; roles: AUTO, HOLIDAYS, OBSERVANCES, TRIPS, SPECIALS, NONE — Per calendar, what its events mark on the days: AUTO, HOLIDAYS, OBSERVANCES, TRIPS, SPECIALS, NONE. Default: none
