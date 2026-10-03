@@ -1,0 +1,70 @@
+# Look keys — version 1.0.299
+
+- `look.palette.accent` — colour (see LOOK) — The accent: the date button, today's mark, the outline of the battery in the date, the paging arrows and words. Default: default
+- `look.palette.onAccent` — colour (see LOOK) — Words drawn on the accent: the date's words, today's number. Default: default
+- `look.palette.text` — colour (see LOOK) — Main words: day numbers, month names, messages on the page. Default: default
+- `look.palette.muted` — colour (see LOOK) — Quiet words: weekday names, the +, the header's time and version, the midday time, "Nothing here". Default: default
+- `look.palette.line` — colour (see LOOK) — Lines and quiet fills: between days, the midday line, the battery bar's empty part, an empty day's box. Default: default
+- `look.battery.fill.fullCharge` — colour (see LOOK) — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is at full charge. Default: default
+- `look.battery.fill.regular` — colour (see LOOK) — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is regular. Default: default
+- `look.battery.fill.warning` — colour (see LOOK) — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is at warning. Default: default
+- `look.battery.fill.critical` — colour (see LOOK) — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is critical. Default: default
+- `look.widget.background` — colour (see LOOK) — The widget's page. Default: default
+- `look.widget.text` — colour (see LOOK) — Plain words on the page: the empty-list and loading messages; follows look.palette.text once that is set, otherwise its own colour. Default: default
+- `look.header.text` — colour (see LOOK) — The time and version in the header; follows look.palette.muted once that is set, otherwise its own colour. Default: default
+- `look.date.fill` — colour (see LOOK) — The date button's fill (when the battery is not drawn in it); follows look.palette.accent once that is set, otherwise its own colour. Default: default
+- `look.date.text` — colour (see LOOK) — The date button's words; follows look.palette.onAccent once that is set, otherwise its own colour. Default: default
+- `look.batteryBar.track` — colour (see LOOK) — The battery bar's empty part; follows look.palette.line once that is set, otherwise its own colour. Default: default
+- `look.batteryBar.cells` — colour (see LOOK) — The gaps between the battery bar's quarters; by default follows look.widget.background. Default: default
+- `look.batteryBar.fill.fullCharge` — colour (see LOOK) — The battery bar's filled part, when the battery is at full charge; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryBar.fill.regular` — colour (see LOOK) — The battery bar's filled part, when the battery is regular; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryBar.fill.warning` — colour (see LOOK) — The battery bar's filled part, when the battery is at warning; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryBar.fill.critical` — colour (see LOOK) — The battery bar's filled part, when the battery is critical; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.fill.fullCharge` — colour (see LOOK) — The battery's filled part, in the date, when the battery is at full charge; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.fill.regular` — colour (see LOOK) — The battery's filled part, in the date, when the battery is regular; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.fill.warning` — colour (see LOOK) — The battery's filled part, in the date, when the battery is at warning; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.fill.critical` — colour (see LOOK) — The battery's filled part, in the date, when the battery is critical; follows look.battery.fill once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.outline` — colour (see LOOK) — The outline of the battery drawn in the date; follows look.palette.accent once that is set, otherwise its own colour. Default: default
+- `look.batteryDate.terminal` — colour (see LOOK) — The battery's band and + terminal, in the date; by default follows look.batteryDate.outline. Default: default
+- `look.batteryDate.track` — colour (see LOOK) — The battery's empty part, in the date; by default follows look.widget.background. Default: default
+- `look.batteryDate.cuts` — colour (see LOOK) — The cuts at the quarters of the battery in the date; by default follows look.widget.background. Default: default
+- `look.battery.percent` — colour (see LOOK) — The battery percentage; by default follows look.batteryBar.fill. Default: default
+- `look.battery.temperature.cool` — colour (see LOOK) — The battery temperature below widget.batteryWarmAt. Default: default
+- `look.battery.temperature.warm` — colour (see LOOK) — The battery temperature from widget.batteryWarmAt to below widget.batteryHotAt. Default: default
+- `look.battery.temperature.hot` — colour (see LOOK) — The battery temperature from widget.batteryHotAt. Default: default
+- `look.rule.day` — colour (see LOOK) — The line between days and before a month; follows look.palette.line once that is set, otherwise its own colour. Default: default
+- `look.rule.midday` — colour (see LOOK) — The midday line; follows look.palette.line once that is set, otherwise its own colour. Default: default
+- `look.midday.text` — colour (see LOOK) — The midday line's time; follows look.palette.muted once that is set, otherwise its own colour. Default: default
+- `look.month.text` — colour (see LOOK) — A month's name in the list; follows look.palette.text once that is set, otherwise its own colour. Default: default
+- `look.day.weekday` — colour (see LOOK) — A weekday's name; follows look.palette.muted once that is set, otherwise its own colour. Default: default
+- `look.day.number` — colour (see LOOK) — A day's number; follows look.palette.text once that is set, otherwise its own colour. Default: default
+- `look.day.weekend` — colour (see LOOK) — A weekend's or holiday's name and number. Default: default
+- `look.day.observance` — colour (see LOOK) — An observance's name and number. Default: default
+- `look.today.fill` — colour (see LOOK) — Today's round mark, and today's weekday name; follows look.palette.accent once that is set, otherwise its own colour. Default: default
+- `look.today.text` — colour (see LOOK) — Today's number on its mark; follows look.palette.onAccent once that is set, otherwise its own colour. Default: default
+- `look.plus` — colour (see LOOK) — The + under a day; follows look.palette.muted once that is set, otherwise its own colour. Default: default
+- `look.more.text` — colour (see LOOK) — The 'earlier' and 'more days' words; follows look.palette.accent once that is set, otherwise its own colour. Default: default
+- `look.empty.fill` — colour (see LOOK) — A day with nothing on it: its box; follows look.palette.line once that is set, otherwise its own colour. Default: default
+- `look.empty.text` — colour (see LOOK) — A day with nothing on it: its words; follows look.palette.muted once that is set, otherwise its own colour. Default: default
+- `look.chip.text` — colour (see LOOK) — Every event's and task's words (by default worked out from each chip's colour); by default worked out per item. Default: default
+- `look.chip.time` — colour (see LOOK) — Every event's time; by default worked out per item. Default: default
+- `look.chip.check` — colour (see LOOK) — A task's tick box; by default worked out per item. Default: default
+- `look.chip.handle` — colour (see LOOK) — The colour dot at a chip's end; by default worked out per item. Default: default
+- `look.nav.mark` — colour (see LOOK) — The double arrows that page the list; follows look.palette.accent once that is set, otherwise its own colour. Default: default
+- `look.chip.alarm` — colour (see LOOK) — The bell on a chip with an alarm. Default: default
+- `look.size.date` — integer 50..250 — The date button's words (and the button with them): percent of its usual size. Default: 100
+- `look.size.header.text` — integer 50..250 — The time and version in the header: percent of its usual size. Default: 100
+- `look.size.battery.text` — integer 50..250 — The battery's percentage and temperature: percent of its usual size. Default: 100
+- `look.size.batteryBar.height` — integer 50..250 — The battery bar's thickness: percent of its usual size. Default: 100
+- `look.size.widget.text` — integer 50..250 — The words on an empty or unreadable list: percent of its usual size. Default: 100
+- `look.size.day.column` — integer 50..250 — The day column's width: percent of its usual size. Default: 100
+- `look.size.day.weekday` — integer 50..250 — A weekday's name: percent of its usual size. Default: 100
+- `look.size.day.number` — integer 50..250 — A day's number: percent of its usual size. Default: 100
+- `look.size.today` — integer 50..250 — Today's round mark and its number: percent of its usual size. Default: 100
+- `look.size.day.specials` — integer 50..250 — Special days' dots under the day number: percent of its usual size. Default: 100
+- `look.size.plus` — integer 50..250 — The + under a day: percent of its usual size. Default: 100
+- `look.size.midday.text` — integer 50..250 — The midday line's time: percent of its usual size. Default: 100
+- `look.size.month.text` — integer 50..250 — A month's name in the list: percent of its usual size. Default: 100
+- `look.size.more.text` — integer 50..250 — The 'earlier' and 'more days' words: percent of its usual size. Default: 100
+- `look.size.chip.text` — integer 50..250 — Every event's and task's words (the chip grows with them): percent of its usual size. Default: 100
+- `look.size.chip.time` — integer 50..250 — Every event's time: percent of its usual size. Default: 100
