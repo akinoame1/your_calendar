@@ -1,4 +1,4 @@
-# Look keys — version 1.0.310
+# Look keys — version 1.0.309
 
 Look colours — every look.* key below takes a colour value (see LOOK); on a fresh install each is "default", drawn as shipped.
 (under X): its own colour until X is set, then X's. (follows X): X's colour unless set itself. (per item): worked out for each item unless set. Setting the part itself always wins.
@@ -54,12 +54,6 @@ Look colours — every look.* key below takes a colour value (see LOOK); on a fr
 - `look.chip.handle` — The colour dot at a chip's end (per item)
 - `look.nav.mark` — The double arrows that page the list (under palette.accent)
 - `look.chip.alarm` — The bell on a chip with an alarm
-- `look.app.accent` — The app's accent: its buttons, switches, today's mark, links (under palette.accent)
-- `look.app.onAccent` — Words on the app's accent (under palette.onAccent)
-- `look.app.text` — The app's main words (under palette.text)
-- `look.app.muted` — The app's quiet words: times, labels, hints (under palette.muted)
-- `look.app.line` — The app's lines and outlines (under palette.line)
-- `look.app.background` — The app's page (under widget.background)
 
 Look sizes — every look.size.* key takes a whole percent of its usual size, 50..250; 100 on a fresh install.
 - `look.size.date` — The date button's words (and the button with them)
