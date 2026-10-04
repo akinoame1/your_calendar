@@ -1,6 +1,6 @@
-# MyCalendar — the manual for AI chats, version 1.0.310
+# MyCalendar — the manual for AI chats, version 1.0.309
 
-Check word: **kestrel-6914**. When you answer from this manual, write the check word once in your explanation, so the app knows you read it. If you read an earlier version in this conversation, [what changed](changes.md) is what to read again.
+Check word: **ember-328f**. When you answer from this manual, write the check word once in your explanation, so the app knows you read it. If you read an earlier version in this conversation, [what changed](changes.md) is what to read again.
 
 The app is an Android home-screen widget first and an app second. It reads the calendars the phone already syncs (Google Calendar and others) and lists the coming days, the way Google Calendar's own "Schedule" widget does. Tasks are ordinary events in one calendar chosen as the tasks calendar (tasks.calendar).
 

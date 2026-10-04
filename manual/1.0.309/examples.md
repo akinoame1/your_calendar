@@ -1,4 +1,4 @@
-# Worked examples — version 1.0.310
+# Worked examples — version 1.0.309
 
 Each is a real kind of request, an answer the app would accept but that misses what was meant, and a good one. Shallow answers are not refused by the app — only you can avoid them.
 
