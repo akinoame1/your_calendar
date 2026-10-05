@@ -1,4 +1,4 @@
-# Settings — version 1.0.315
+# Settings — version 1.0.311
 
 Settings — one per line: key — what it takes — what it does. Default: a fresh install's value.
 - `widget.daysAhead` — integer 1..60 — How many days the widget lists. Default: 14
@@ -8,7 +8,6 @@ Settings — one per line: key — what it takes — what it does. Default: a fr
 - `widget.comingUpMinutes` — integer 1..240 — How far ahead the 'coming up' notice looks. Default: 10
 - `widget.chipColours` — one of: VIVID, MUTED — VIVID: each calendar's own colour; MUTED: one lightness for all. Default: VIVID
 - `widget.battery` — one of: BAR, PILL, OFF — BAR across the top, PILL inside the date, or OFF. Default: BAR
-- `widget.batteryLive` — boolean — Show plugging in, unplugging and each percent on the widget at once, instead of within 5-15 minutes. Android allows this only to a running app, so while on a silent notification stays in the shade (it has Stop). Off by default. Default: false
 - `widget.batteryWarningAt` — integer 10..95 — Percent at and below which the battery is at warning (amber); above critical. Default: 30
 - `widget.batteryCriticalAt` — integer 5..90 — Percent at and below which the battery is critical (red); below warning. Default: 15
 - `widget.batteryFullChargeAt` — integer 10..100 — Percent from which the battery is at full charge (its fullCharge colour, state battery.fullCharge); above warning. Default: 80

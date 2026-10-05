@@ -1,4 +1,4 @@
-# Look keys — version 1.0.315
+# Look keys — version 1.0.312
 
 Look colours — every look.* key below takes a colour value (see LOOK); on a fresh install each is "default", drawn as shipped.
 (under X): its own colour until X is set, then X's. (follows X): X's colour unless set itself. (per item): worked out for each item unless set. Setting the part itself always wins.
