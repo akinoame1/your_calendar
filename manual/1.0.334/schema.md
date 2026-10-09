@@ -1,4 +1,4 @@
-# Settings — version 1.0.335
+# Settings — version 1.0.334
 
 Settings — one per line: key — what it takes — what it does. Default: a fresh install's value.
 - `widget.daysAhead` — integer 1..60 — How many days the widget lists. Default: 14
