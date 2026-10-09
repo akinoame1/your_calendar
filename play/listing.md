@@ -1,9 +1,10 @@
 # Google Play listing — draft
 
-Drafts for the Play Console, to be checked and edited before use. Issue: akinoame1/my_calendare#333.
-Everything here describes the **release** build: no internet permission, no log upload. If a Play
-build ever carries the opt-in log upload, the privacy policy, the Data safety answers and the
-permission declarations below change with it.
+Drafts for the Play Console, to be checked and edited before use. Issues: akinoame1/my_calendare#333, #342.
+Everything here describes the **play** build (`mycalendar-play.aab`): the release build plus the
+opt-in log upload, which is off by default and needs the user's agreement to a disclosure. **Its
+upload credentials are compiled in, so it is for internal testing only and must change before a
+public release.**
 
 ## App details
 
@@ -34,7 +35,8 @@ days ahead, each event in its own colour.
 • Battery and charging shown on the widget.
 
 No account, no ads, no tracking. Your calendar data stays on your phone and syncs through your
-phone's own calendar sync.
+phone's own calendar sync. An optional, off-by-default switch sends the app's diagnostic log to the
+developer to help fix problems.
 
 ## Graphics checklist
 
@@ -43,15 +45,19 @@ phone's own calendar sync.
 - At least 2 phone screenshots (16:9 or 9:16, 320–3840 px): the widget on the home screen, the
   schedule app, the event screen, the editor, the date picker.
 
-## Data safety form (release build)
+## Data safety form (play build, with the opt-in log upload; #342)
 
-- **Does your app collect or share any of the required user data types?** No.
-  - Calendar data is processed only on the device and is not sent to the developer.
-  - User-initiated sharing to another app through the system share sheet is not collection by the
-    developer.
-- **Is all user data encrypted in transit?** Not applicable: no data is transmitted.
-- **Do you provide a way for users to request that their data be deleted?** Not applicable:
-  nothing is held off the device. Uninstalling removes the app's local data.
+- **Does your app collect or share any of the required user data types?** Yes, collected, only
+  when the user turns on "Send this app's log" (off by default, after an in-app disclosure and
+  consent).
+  - **App activity → Other user-generated content / App interactions:** event titles and times as
+    they appear in the log. Optional, for app functionality and analytics (fixing bugs).
+  - **App info and performance → Crash logs, Diagnostics:** optional, for analytics (fixing bugs).
+  - **Device or other IDs:** none. The log carries the phone model, not an identifier.
+- **Shared with third parties?** No. GitHub hosts the private repository as a service provider.
+- **Encrypted in transit?** Yes (HTTPS).
+- **Can users request deletion?** Yes, through the contact in the privacy policy.
+- **Collection is optional?** Yes.
 
 ## Content rating
 

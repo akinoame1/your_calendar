@@ -1,6 +1,6 @@
 # MyCalendar — Privacy Policy
 
-_Effective 2026-10-09. Applies to the MyCalendar app published on Google Play._
+_Effective 2026-10-09 (revised the same day: optional log sending). Applies to the MyCalendar app published on Google Play._
 
 MyCalendar is a home-screen calendar widget and app. It shows the calendars that your phone
 already syncs, and lets you create and edit events and tasks in them.
@@ -17,12 +17,21 @@ already syncs, and lets you create and edit events and tasks in them.
 
 ## What leaves your phone
 
-**Nothing, unless you send it yourself.** The Play version of MyCalendar has no internet
-permission. It has no analytics, ads, tracking or accounts of its own, and the developer receives
-no data from it.
+**Nothing, unless you turn it on or send it yourself.** MyCalendar has no ads, analytics, tracking
+or accounts.
 
-Two features hand content to another app, only when you tap them:
+**Optional: sending the app's log.** Settings has a switch, **off by default**, that sends
+MyCalendar's own diagnostic log to the developer to help fix problems. Before it turns on, the app
+shows what is sent and asks you to agree.
+- **What:** what the app did and when. That includes titles and times of events it showed or
+  changed, the app version and phone model, and any report you choose to send.
+- **Where:** a private GitHub repository, over HTTPS. Only the developer, and an AI assistant
+  (Claude) working for the developer, read it to find and fix bugs.
+- **While it is on:** a badge on the widget says so. One tap on the badge pauses sending, and the
+  switch turns it off. Nothing is sold or shared with anyone else.
+- **Deleting it:** ask through the contact below and what was sent from your phone will be deleted.
 
+**Sharing you start yourself.** Two features hand content to another app, only when you tap them:
 - **Share** (for example, a question to an AI assistant, or a bug report) opens Android's share
   sheet with the text, and a picture of the widget if you include one. Where it goes after that is
   up to you and the app you pick, under that app's own privacy policy.
