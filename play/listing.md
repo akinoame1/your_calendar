@@ -2,9 +2,10 @@
 
 Drafts for the Play Console, to be checked and edited before use. Issues: akinoame1/my_calendare#333, #342.
 Everything here describes the **play** build (`mycalendar-play.aab`): the release build plus the
-opt-in log upload, which is off by default and needs the user's agreement to a disclosure. **Its
-upload credentials are compiled in, so it is for internal testing only and must change before a
-public release.**
+opt-in log upload, which is off by default and needs the user's agreement to a disclosure. **It
+carries no credentials** (my_calendare#344, from 1.0.338): the upload and bell keys are pasted in
+Settings on the phone, so without them it records and sends nothing. _(Corrected 2026-10-09: until
+1.0.337 the credentials were compiled in.)_
 
 ## App details
 
