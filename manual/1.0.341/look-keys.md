@@ -1,0 +1,86 @@
+# Look keys — version 1.0.341
+
+Look colours — every look.* key below takes a colour value (see LOOK); on a fresh install each is "default", drawn as shipped.
+(under X): its own colour until X is set, then X's. (follows X): X's colour unless set itself. (per item): worked out for each item unless set. Setting the part itself always wins.
+- `look.palette.accent` — The accent: the date button, today's mark, the outline of the battery in the date, the paging arrows and words
+- `look.palette.onAccent` — Words drawn on the accent: the date's words, today's number
+- `look.palette.text` — Main words: day numbers, month names, messages on the page
+- `look.palette.muted` — Quiet words: weekday names, the +, the header's time and version, the midday time, "Nothing here"
+- `look.palette.line` — Lines and quiet fills: between days, the midday line, the battery bar's empty part, an empty day's box
+- `look.battery.fill.fullCharge` — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is at full charge
+- `look.battery.fill.regular` — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is regular
+- `look.battery.fill.warning` — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is at warning
+- `look.battery.fill.critical` — The battery's colour everywhere -- the bar, the battery in the date, and the percentage, when the battery is critical
+- `look.widget.background` — The widget's page
+- `look.widget.text` — Plain words on the page: the empty-list and loading messages (under palette.text)
+- `look.header.text` — The time and version in the header (under palette.muted)
+- `look.date.fill` — The date button's fill (when the battery is not drawn in it) (under palette.accent)
+- `look.date.text` — The date button's words (under palette.onAccent)
+- `look.batteryBar.track` — The battery bar's empty part (under palette.line)
+- `look.batteryBar.cells` — The gaps between the battery bar's quarters (follows widget.background)
+- `look.batteryBar.fill.fullCharge` — The battery bar's filled part, when the battery is at full charge (under battery.fill)
+- `look.batteryBar.fill.regular` — The battery bar's filled part, when the battery is regular (under battery.fill)
+- `look.batteryBar.fill.warning` — The battery bar's filled part, when the battery is at warning (under battery.fill)
+- `look.batteryBar.fill.critical` — The battery bar's filled part, when the battery is critical (under battery.fill)
+- `look.batteryDate.fill.fullCharge` — The battery's filled part, in the date, when the battery is at full charge (under battery.fill)
+- `look.batteryDate.fill.regular` — The battery's filled part, in the date, when the battery is regular (under battery.fill)
+- `look.batteryDate.fill.warning` — The battery's filled part, in the date, when the battery is at warning (under battery.fill)
+- `look.batteryDate.fill.critical` — The battery's filled part, in the date, when the battery is critical (under battery.fill)
+- `look.batteryDate.outline` — The outline of the battery drawn in the date (under palette.accent)
+- `look.batteryDate.terminal` — The battery's band and + terminal, in the date (follows batteryDate.outline)
+- `look.batteryDate.track` — The battery's empty part, in the date (follows widget.background)
+- `look.batteryDate.cuts` — The cuts at the quarters of the battery in the date (follows widget.background)
+- `look.battery.percent` — The battery percentage (follows batteryBar.fill)
+- `look.battery.temperature.cool` — The battery temperature below widget.batteryWarmAt
+- `look.battery.temperature.warm` — The battery temperature from widget.batteryWarmAt to below widget.batteryHotAt
+- `look.battery.temperature.hot` — The battery temperature from widget.batteryHotAt
+- `look.rule.day` — The line between days and before a month (under palette.line)
+- `look.rule.midday` — The midday line (under palette.line)
+- `look.midday.text` — The midday line's time (under palette.muted)
+- `look.month.text` — A month's name in the list (under palette.text)
+- `look.day.weekday` — A weekday's name (under palette.muted)
+- `look.day.number` — A day's number (under palette.text)
+- `look.day.weekend` — A weekend's or holiday's name and number
+- `look.day.observance` — An observance's name and number
+- `look.today.fill` — Today's round mark, and today's weekday name (under palette.accent)
+- `look.today.text` — Today's number on its mark (under palette.onAccent)
+- `look.plus` — The + under a day (under palette.muted)
+- `look.more.text` — The 'earlier' and 'more days' words (under palette.accent)
+- `look.empty.fill` — A day with nothing on it: its box (under palette.line)
+- `look.empty.text` — A day with nothing on it: its words (under palette.muted)
+- `look.chip.text` — Every event's and task's words (by default worked out from each chip's colour) (per item)
+- `look.chip.time` — Every event's time (per item)
+- `look.chip.check` — A task's tick box (per item)
+- `look.chip.handle` — The colour dot at a chip's end (per item)
+- `look.nav.mark` — The double arrows that page the list (under palette.accent)
+- `look.chip.alarm` — The bell on a chip with an alarm
+- `look.app.accent` — The app's accent: its buttons, switches, today's mark, links (under palette.accent)
+- `look.app.onAccent` — Words on the app's accent (under palette.onAccent)
+- `look.app.text` — The app's main words (under palette.text)
+- `look.app.muted` — The app's quiet words: times, labels, hints (under palette.muted)
+- `look.app.line` — The app's lines and outlines (under palette.line)
+- `look.app.background` — The app's page (under widget.background)
+
+Look sizes — every look.size.* key takes a whole percent of its usual size, 50..250; 100 on a fresh install.
+- `look.size.date` — The date button's words (and the button with them)
+- `look.size.header.text` — The time and version in the header
+- `look.size.battery.text` — The battery's percentage and temperature
+- `look.size.batteryBar.height` — The battery bar's thickness
+- `look.size.widget.text` — The words on an empty or unreadable list
+- `look.size.day.column` — The day column's width
+- `look.size.day.weekday` — A weekday's name
+- `look.size.day.number` — A day's number
+- `look.size.today` — Today's round mark and its number
+- `look.size.day.specials` — Special days' dots under the day number
+- `look.size.plus` — The + under a day
+- `look.size.midday.text` — The midday line's time
+- `look.size.month.text` — A month's name in the list
+- `look.size.more.text` — The 'earlier' and 'more days' words
+- `look.size.chip.text` — Every event's and task's words (the chip grows with them)
+- `look.size.chip.time` — Every event's time
+
+Look spaces — every look.space.* key takes a whole percent of today's space, 0..300 (0 for none); 100 on a fresh install.
+- `look.space.chips` — The gap under each chip, between one chip and the next
+- `look.space.days` — The space above and below the line between two days
+- `look.space.chip.side` — The space inside a chip, at its left and right ends
+- `look.space.dayColumn` — The gap between the day column and the chips

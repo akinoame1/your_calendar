@@ -1,4 +1,4 @@
-# The widget — version 1.0.340
+# The widget — version 1.0.341
 
 THE WIDGET, top to bottom (part names in brackets are the names look.* and look.size.* keys use):
 - The page: a dark rounded panel (widget.background). Words on an empty or unreadable list (widget.text).

@@ -1,4 +1,4 @@
-# MyCalendar — the manual for AI chats, version 1.0.340
+# MyCalendar — the manual for AI chats, version 1.0.341
 
 Check word: **harbor-5600**. When you answer from this manual, put it in your JSON object as `"_check": "harbor-5600"` -- the person copies only the JSON -- so the app knows you read it. If you read an earlier version in this conversation, [what changed](changes.md) is what to read again.
 
