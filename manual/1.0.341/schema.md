@@ -1,0 +1,49 @@
+# Settings — version 1.0.341
+
+Settings — one per line: key — what it takes — what it does. Default: a fresh install's value.
+- `widget.daysAhead` — integer 1..60 — How many days the widget lists. Default: 14
+- `widget.weekendDays` — list of: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY — Days drawn red as the weekend. Default: FRIDAY, SATURDAY
+- `widget.middayRuleHour` — integer or null 0..23 — Hour of the rule splitting a day's morning from afternoon; null for none. Default: 12
+- `widget.lingerMinutes` — integer 0..720 — Minutes a finished event stays on today's list on the widget: to stop showing events N minutes after they finish, set N; 0 takes them off as they end. The app's schedule keeps past events. Default: 60
+- `widget.comingUpMinutes` — integer 1..240 — How far ahead the 'coming up' notice looks. Default: 10
+- `widget.chipColours` — one of: VIVID, MUTED — VIVID: each calendar's own colour; MUTED: one lightness for all. Default: VIVID
+- `widget.battery` — one of: BAR, PILL, OFF — BAR across the top, PILL inside the date, or OFF. Default: BAR
+- `widget.batteryLive` — boolean — Show plugging in, unplugging and each percent on the widget at once, instead of within 5-15 minutes. Android allows this only to a running app, so while on a silent notification stays in the shade (it has Stop). Off by default. Default: false
+- `widget.batteryWarningAt` — integer 10..95 — Percent at and below which the battery is at warning (amber); above critical. Default: 30
+- `widget.batteryCriticalAt` — integer 5..90 — Percent at and below which the battery is critical (red); below warning. Default: 15
+- `widget.batteryFullChargeAt` — integer 10..100 — Percent from which the battery is at full charge (its fullCharge colour, state battery.fullCharge); above warning. Default: 80
+- `widget.batteryWarmAt` — integer 20..60 — Degrees from which the battery temperature is warm (battery.temperature.warm); below hot. Default: 35
+- `widget.batteryHotAt` — integer 20..70 — Degrees from which the battery temperature is hot (battery.temperature.hot); above warm. Default: 40
+- `widget.size.header` — integer 60..200 — Widget header text, percent. Default: 100
+- `widget.size.dayColumn` — integer 60..200 — Widget day column, percent. Default: 100
+- `widget.size.weekday` — integer 60..200 — Widget weekday name within the day column, percent. Default: 130
+- `widget.size.chips` — integer 60..200 — Widget event and task text, percent. Default: 115
+- `widget.size.chipSpace` — integer 0..200 — Widget space around chip text, percent. Default: 100
+- `app.size.dayColumn` — integer 60..200 — App schedule day column, percent. Default: 100
+- `app.size.weekday` — integer 60..200 — App schedule weekday name, percent. Default: 100
+- `app.size.chips` — integer 60..200 — App schedule event and task text, percent. Default: 100
+- `app.size.chipSpace` — integer 0..200 — App schedule space around chip text, percent. Default: 100
+- `app.versionLine` — "ALL", {"allExcept": list of}, or list of: SCHEDULE, EVENT, EDIT, SEARCH, SETTINGS, CHAT, HIDDEN, REPORT — Screens that show the version and report line (a tap on it opens the debug report). "ALL" is every screen, including screens added in later versions; {"allExcept": [...]} is every screen but those; a list is exactly those screens and no others, [] none (the widget's version still opens the report). For "everywhere" use "ALL" or allExcept, never a list of today's screens. Default: SCHEDULE
+- `app.versionLine.parts` — ordered list of: VERSION, BUILT, REPORT, at least 1 — What the version line says, in this order: VERSION (1.0.N), BUILT (the build time), REPORT (the word report). Default: VERSION, BUILT, REPORT
+- `app.versionLine.position` — one of: TOP, BOTTOM — The version line above (TOP) or under (BOTTOM) the screen. Default: BOTTOM
+- `app.versionLine.align` — one of: START, CENTER, END — The version line's text from the START, CENTER or END. Default: START
+- `behaviour.cancelled.words` — list of texts, at least 1 — Words that mark an event or task as cancelled when its title starts with one (any case); Cancel writes the first. Cancelled items never notify, ring or carry over. Default: CANCELED, CANCELLED
+- `behaviour.cancelled.show` — one of: AS_IS, STRUCK, HIDDEN — How a cancelled item is drawn: AS_IS (like any other; style it with the chip.cancelled state), STRUCK (struck through), HIDDEN (not drawn). Default: AS_IS
+- `behaviour.widget.chipTap` — one of: OPEN, SHEET — What a tap on a widget chip does: OPEN the event in the app, or SHEET, a quick sheet over the home screen (Done, Tomorrow, Cancel, Colour, Open, Delete). Default: OPEN
+- `behaviour.widget.chipEnd` — one of: COLOUR, SHEET, NONE — The dot at a widget chip's end (chip.handle): COLOUR picks the item's colour, SHEET opens the quick sheet, NONE draws no dot. Default: COLOUR
+- `behaviour.reschedule.oneTap` — one of: ONE_DAY, WEEKEND, NEXT_WEEK, NEXT_MONTH, NONE — The task screen's one-tap move: ONE_DAY (tomorrow, or a day after the task), WEEKEND, NEXT_WEEK, NEXT_MONTH, or NONE (no button; Other day stays). Default: ONE_DAY
+- `behaviour.reschedule.presets` — ordered list of: PULL_IN, TOMORROW, NEXT_DAY, THIS_WEEKEND, NEXT_WEEKEND, NEXT_WEEK, NEXT_MONTH — The days Other day offers a task, in this order; one that would not move it later is left out (PULL_IN only for a task still ahead). A date picker is always below them. Default: PULL_IN, TOMORROW, NEXT_DAY, THIS_WEEKEND, NEXT_WEEKEND
+- `behaviour.event.quickActions` — ordered list of: LATER_15_MIN, LATER_1_HOUR, NEXT_DAY, NEXT_WEEK, CANCEL — Buttons on an event's screen (not a task's), in this order: LATER_15_MIN, LATER_1_HOUR (timed events only), NEXT_DAY and NEXT_WEEK (same time), CANCEL (cancel or uncancel, keeping it). None by default. Default: none
+- `behaviour.duplicate.keep` — list of: GUESTS, REPEAT, NOTES, PLACE, ALARM — What Duplicate's dialog starts with ticked, of GUESTS, REPEAT, NOTES, PLACE, ALARM (title, day, times and calendar always come). Default all but REPEAT; the dialog can still change each copy. Default: GUESTS, NOTES, PLACE, ALARM
+- `behaviour.tasks.autoMove` — one of: OFF, TODAY — Undone tasks from past days, as carried onto today: OFF only draws them there (default); TODAY moves them to today in the calendar itself, once each morning, keeping their time of day. Writes to the calendar; the app lists what it moved, with Put back. Default: OFF
+- `behaviour.tasks.autoMoveAt` — integer 0..23 — The hour from which the morning move runs (the first refresh after it, within about 15 minutes). Default: 6
+- `behaviour.rules` — list of {"titleContains": list of words (any, ignoring case), "calendar": calendar name, "colour": "#RRGGBB", "hide": true}; at least one of titleContains/calendar and one of colour/hide — Rules for how items are drawn, first match wins: an item whose title contains any of the words and/or is in the named calendar gets the colour, or is not drawn (hide). The widget and the app only; the event itself is not changed. Empty by default. Default: none
+- `app.monthGridOpen` — boolean — Month grid shown above the app's schedule. Default: true
+- `picker.size` — integer 60..200 — Month picker days, percent; shrinks further on its own to fit. Default: 100
+- `newEvent.minutes` — integer 5..480 — Length of a new timed event. Default: 30
+- `newEvent.visibility` — one of: DEFAULT, CONFIDENTIAL, PRIVATE, PUBLIC — Visibility a new event gets. Default: DEFAULT
+- `newEvent.calendar` — one of, or null (this phone's calendar names) — Calendar a new event goes to; null for the phone's first writable one. Default: none
+- `newEvent.rememberLastCalendar` — boolean — A new event goes to the calendar the last one went to. Default: false
+- `tasks.calendar` — one of, or null (this phone's calendar names) — The calendar whose events are tasks. Default: none
+- `calendars.hidden` — list of (this phone's calendar names) — Calendars kept off the widget and the schedule. Default: none
+- `holidays.roles` — object: calendar -> role; roles: AUTO, HOLIDAYS, OBSERVANCES, TRIPS, SPECIALS, NONE — Per calendar, what its events mark on the days: AUTO, HOLIDAYS, OBSERVANCES, TRIPS, SPECIALS, NONE. Default: none
